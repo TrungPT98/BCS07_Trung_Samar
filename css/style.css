@@ -5,7 +5,7 @@
 }
 html {
     font-family: 'Roboto', sans-serif;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
 }
 
 .container {
@@ -794,7 +794,17 @@ footer .footer_top .footer_form .btn_grad:hover i {
     bottom: 15px;
     color: white;
     box-shadow: -4px 4px 24px -10px #f55f8d;
+    visibility: hidden;
+    opacity: 0;
     transition: all .2s;
+}
+
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+.cd-top--fade-out {
+    opacity: .5;
 }
 
 @keyframes uptodown {
